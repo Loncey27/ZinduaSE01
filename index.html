@@ -89,7 +89,7 @@
             <li>Toyota</li>
         </ol>
         <!--nesting lists-->
-        <h1>Nested lists</h1>
+        <h1>Nested unordered list</h1>
         <ul>
             <li>Fruits</li>
                 <ul>
@@ -108,7 +108,7 @@
             </li>
         </ul>
     <!--nested ordered list-->
-    <h1>nested ordered list</h1>
+    <h1>Nested ordered list</h1>
     <ol>
         <li>Continents
             <ol>
@@ -127,7 +127,143 @@
             </ol>
         </li>
     </ol>
-    
+    <!-- description list uses the tag dl -->
+     <h2>Description List</h2>
+     <dl> 
+        <!-- dl stands for description list, dt description term, 
+         dd is description detail -->
+        <dt>HTML</dt>
+            <dd>a mark up language used for creating web pages</dd>
+        <dt>CSS</dt>
+            <dd>cascading stylesheet</dd>
+        <dt>Javascript</dt>
+            <dd>a programming language used for creating dynamic webpages</dd>
+     </dl>
     </p>
+    <!-- sample task -->
+     <h2>Description List 2</h2>
+     <dl>
+        <dt>ODM</dt>
+            <dd>Orange Democratic Party is the main oppossition party in Kenya</dd>
+        <dt>UDA</dt>
+            <dd>United Democratic Alliance is the ruling coalition party in Kenya</dd>
+        <dt>Wiper Party</dt>
+            <dd>Wiper is another opposition political party in kenya</dd>
+     </dl>
+     <!-- combining lists -->
+    <h1>Combined List</h1>
+    <ul>
+        <li>HTML
+            <ol>
+                <li>Syntax</li>
+                <li>attributes</li>
+                <li>elements</li>
+            </ol>
+        </li>
+        <li>CSS
+            <dl>
+                <dt>selectors</dt>
+                    <dd>patterns used to select html elements</dd>
+                <dt>properties</dt>
+                    <dd>characters used to style elements</dd>
+            </dl>
+        </li>
+    </ul>
+     <!-- combining lists -->
+    <h1>Combined List</h1>
+    <ul>
+        <li>Car Manufacturers
+            <ol>
+                <li>BMW</li>
+                <li>Audi</li>
+                <li>Subaru</li>
+            </ol>
+        </li>
+        <li>VIPs
+            <dl>
+                <dt>presidents</dt>
+                    <dd>heads of states and govts</dd>
+                <dt>Ministers</dt>
+                    <dd>national reps</dd>
+            </dl>
+        </li>
+    </ul>
+<!-- semantic html elements -->
+<!-- these involve writing code in human and machine readable form -->
+<header>
+    <h1>This is my website</h1>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about US">About US</a></li>
+            <li><a href="Contact">Contact</a></li>
+            <li><a href="+254700822580">Phone</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+   <hr>
+    <section>
+        <h2>Main Content</h2>
+        <p>Welcome to my website</p>
+        <button>Get Started</button>
+    </section>
+    <hr>
+    <section>
+        <h2>About Us</h2>
+        <p>We are a website building organizattion</p>
+        <button>About US</button>
+    </section>
+    <hr>
+    <section>
+        <h2>Contact Us</h2>
+        <p><a href="mailto:ojwangloncey@gmail.com">Reach us for more info</a></p>
+        <button>Contact Us</button>
+    </section>
+    <!-- article element -->
+   <hr>
+   <section>
+    <article>
+        <h2>Latest News</h2>
+        <p>News articles</p>
+    </article>
+    <!-- Unrelated content to the main content use aside-->
+     <aside>
+        <h3>related links</h3>
+        <ul>
+            <li><a href="https://edusson.com">Edusson</a></li>
+            <li><a href="https://youtube.com">YouTube</a></li>
+            <li><a href="https://zinduaschool.com">Zindua</a></li>
+        </ul>
+     </aside>
+    </section>
+    <hr>
+    <section>
+    <!-- embedding code in a section -->
+     <!-- use code tage -->
+      <h2>
+        <p>
+            <code>const x=1</code>
+        </p>
+      </h2>
+    <!-- validation -->
+     <!-- its a way of ensuring web docs adhere to specified
+      standards and syntactical rules -->
+      <label for="username">username</label>
+        <input type="text" name="username" id="username" required>
+      <label for="number">Age</label>
+        <input type="number" name="age" min="18" max="98" placeholder="enter age" required>
+      <label for="password">password</label>
+        <input type="password" name="password" placeholder="enter password" required>
+      <label for="email">email</label>
+        <input type="email" name="email" placeholder="enter your email" required>
+      <button type="submit">submit</button>
+      
+    </section>
+    <!-- sections are separated using a horizontal rule i.e hr -->
+</main>
+<footer>
+    <p>&copy; 2025 My website. All Rights Reserved</p>
+</footer>
 </body>
 </html>
